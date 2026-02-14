@@ -1,19 +1,29 @@
 # Patrick Norton - Data Science Portfolio
 
-A collection of data science and analytics projects showcasing skills in Python, R, data wrangling, statistical analysis, and visualization.
+A collection of data science and analytics projects showcasing skills in Python, R, data wrangling, statistical analysis, machine learning, and visualization.
 
 ## Projects
 
-### Warehouse Order Analysis (`ware-analysis/`)
-**Language:** Python (pandas, matplotlib, seaborn)
+### Ware Spending Analysis (`ware-analysis/`)
+**Language:** Python (pandas, matplotlib, seaborn, numpy)
 
-Analysis of company purchasing/order data, including:
-- Merging and standardizing data from multiple CSV sources
-- Address cleaning and normalization
+Audit and investigation of employee Ware's purchasing activity, including:
+- Merging and standardizing order data from multiple CSV sources
+- Address cleaning and normalization using regex
 - Spending analysis with 8 professional visualizations (monthly trends, category breakdowns, order size distributions, shipping address analysis)
-- Summary statistics and large-order identification
+- Summary statistics and large-order identification for management reporting
 
-### Dos Pueblos High School Grade Analysis (`dos-pueblos-grade-analysis/`)
+### PARCA Donor Analysis (`parca-donor-analysis/`)
+**Language:** R (tidyverse, ggplot2, tidymodels, xgboost, forecast, lubridate)
+
+Nonprofit donor geographic and time series analysis for PARCA, including:
+- State and city-level donor distribution analysis with 3D pie charts and faceted bar plots
+- High financial score donor identification by geography
+- Time series forecasting of monthly donor acquisition using XGBoost and ARIMA/ETS models
+- 12-month donor prediction by state with heatmap and bar chart visualizations
+- State name standardization and non-U.S. location filtering
+
+### Dos Pueblos Grade Analysis (`dos-pueblos-grade-analysis/`)
 **Language:** R (tidyverse, dplyr, ggplot2)
 
 Statistical analysis of grade distributions at Dos Pueblos High School, including:
@@ -31,25 +41,35 @@ Analysis of student debt and college costs using federal education data, includi
 - Public vs. private institution analysis
 - Merging education, cost, and CPI datasets for comprehensive analysis
 
+### Boulder Project (`boulder-project/`)
+Boulder-area data analysis project (PDF report).
+
+### R Markdown Exercise (`r-markdown-exercise/`)
+Demonstration of R Markdown for reproducible document generation (PDF report).
+
 ## Repository Structure
 
 ```
 .
 ├── README.md
-├── README_original.docx
 ├── ware-analysis/
 │   └── WareAnalysis.py
+├── parca-donor-analysis/
+│   ├── CopyOfPARCADonorScript.R
+│   └── PARCAinsight.pdf
 ├── dos-pueblos-grade-analysis/
 │   ├── DosPueblos.R
-│   ├── DosPueblos_modified.pdf
-│   ├── BoulderProject.pdf
-│   └── RMarkdownExercise.pdf
-└── new-york-student-debt/
-    ├── NewYorkStuDebt.R
-    └── NewYorkAnalysis.pdf
+│   └── DosPueblos_modified.pdf
+├── new-york-student-debt/
+│   ├── NewYorkStuDebt.R
+│   └── NewYorkAnalysis.pdf
+├── boulder-project/
+│   └── BoulderProject.pdf
+└── r-markdown-exercise/
+    └── RMarkdownExercise.pdf
 ```
 
 ## Tools & Technologies
 - **Python:** pandas, matplotlib, seaborn, numpy
-- **R:** tidyverse, dplyr, ggplot2
-- **Skills:** Data wrangling, statistical analysis, data visualization, exploratory data analysis
+- **R:** tidyverse, dplyr, ggplot2, tidymodels, xgboost, forecast, lubridate, modeltime
+- **Skills:** Data wrangling, statistical analysis, data visualization, time series forecasting, machine learning, exploratory data analysis
